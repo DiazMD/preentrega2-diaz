@@ -116,6 +116,7 @@ aside{
     border-radius: 10px;
     background-color: rgb(168, 39, 39);
     padding-top: 2rem;
+    box-shadow: 3px 3px 10px black;
 }
 
 .inscribite{
@@ -123,10 +124,14 @@ aside{
     color: white;
 }
 
+.formulario{
+    height: 100%;
+}
+
 .contenedor-form fieldset{
     width: 500px;
     margin: 0 auto;
-    padding: 2px;
+    padding: 10px;
     border: 1px black solid;
     border-radius: 10px;
     background-color: white
@@ -161,6 +166,37 @@ aside{
 .contenedor-contacto h2{
     text-align: center;
 }
+
+/*estilos main contenedor galeria*/
+.contenedor-galeria{
+    max-width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.imagen-galeria{
+    padding: 30;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    margin: 15px;
+    cursor: pointer;
+}
+
+.imagen-galeria img{
+    width: 250px;
+    height: 250px;
+}
+
+.imagen-galeria:hover{
+    transform: scale(2.0);
+    filter: drop-shadow(10px 10px 10px);
+    transition: 0.8s;
+}
+
+
 
 /*estilos footer*/
 
