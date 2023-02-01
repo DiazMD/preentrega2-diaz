@@ -1,0 +1,209 @@
+*{
+    box-sizing: border-box;
+}
+
+/*Estilos header*/
+header{
+    grid-area: header;
+}
+
+.navbar{
+    height: 100%;
+}
+
+.header-fondo{
+    background-color: rgb(168, 39, 39);
+}
+
+.navbar-titulo{
+    display: inline-block;
+    color: white;
+}
+
+.navbar-menu{
+    color: white;
+}
+
+.navbar-menu a,
+.navbar-menu a:visited
+{
+    color: white;
+}
+
+.navbar-nav{
+    width: 100%;
+}
+
+.desplegable-fondo{
+    background-color: rgb(190, 62, 62);
+}
+
+
+/*Estilos contenedor index*/
+.contenedor-index{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 2fr 2fr 0.5fr ;
+
+    grid-template-areas:
+    "header header header"
+    "aside aside aside"
+    "main main main"
+    "footer footer footer"
+    ;
+}
+
+
+/*Estilos main index*/
+
+main{
+    padding: 15px;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    grid-area: main;
+}
+
+.contenedor-noticias{
+    margin: 20px;
+    justify-content: center;
+}
+.noticias{
+    padding: 20px;
+}
+
+
+.card:hover{
+    box-shadow: 1px 1px 15px black;
+    transition: 0.4s;
+}
+
+aside{
+    display: none;
+    grid-area: aside;
+    justify-content: center;
+}
+
+/*Estilos template areas inscripcion*/
+.contenedor-inscripcion{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 3fr 0.5fr;
+    grid-template-rows: 0.5fr 2fr 2fr 0.5fr;
+
+    grid-template-areas: 
+    "header header"
+    "main aside"
+    "main aside"
+    "footer footer"
+    ;
+}
+
+/*estilos main inscripcion*/
+.contenedor-form{
+    height: 100%;
+    max-width: 800px;
+    border-radius: 1px;
+    border: 2px black solid;
+    border-radius: 10px;
+    background-color: rgb(168, 39, 39);
+    padding-top: 2rem;
+}
+
+.inscribite{
+    text-align: center;
+    color: white;
+}
+
+.contenedor-form fieldset{
+    width: 500px;
+    margin: 0 auto;
+    padding: 2px;
+    border: 1px black solid;
+    border-radius: 10px;
+    background-color: white
+}
+
+.nombre-apellido, .edad, .sexo, .direccion, .mail{
+    display: inline-block;
+    width: 250px;
+    padding: 10px;
+}
+
+.motivo{
+    text-align: center;
+}
+
+.aside-lateral{
+    background-color: rgb(203, 83, 39);
+    color: white;
+    text-align: center;
+    justify-content: center;
+}
+
+/*estilos main contenedor contacto*/
+.contenedor-contacto{
+    height: 100%;
+    border: 2px black solid;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.contenedor-contacto h2{
+    text-align: center;
+}
+
+.contenedor-contacto .informacion{
+}
+
+
+/*estilos footer*/
+
+footer{
+    background-color: rgb(105, 105, 105);
+    color: white;
+    padding: 15px;
+    width: 100%;
+    grid-area: footer;
+}
+
+footer hr{
+    height: 1px;
+    background-color: #7a7a7a;
+}
+
+footer .contenedor-footer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 1200px;
+        margin: auto;
+    }
+
+footer a .icono{
+    color: white;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+footer a .icono:hover{
+    transform: rotate(360deg);
+    transition: 0.9s;
+}
+
+/*Pantallas de ordenador*/
+@media screen and (min-width:1024px){
+    aside{
+        display: block;
+    }
+
+    .contenedor-noticias{
+        margin: 20px;
+        justify-content: center;
+        display: flex;
+    }
+}
