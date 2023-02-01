@@ -137,6 +137,16 @@ aside{
     background-color: white
 }
 
+fieldset{
+    box-shadow: 3px 3px 10px black;
+}
+
+fieldset:hover{
+    transform: scale(1.5);
+    box-shadow: 1px 1px 15px rgb(243, 137, 17);
+    transition: 0.6s;
+}
+
 .nombre-apellido, .edad, .sexo, .direccion, .mail{
     display: inline-block;
     width: 250px;
@@ -196,7 +206,29 @@ aside{
     transition: 0.8s;
 }
 
+/*Estilos main contenedor nosotros*/
+.contenedor-cuarteles{
+    background-color: white;
+    border-radius: 10px;
+    width: 650px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: left;
+    padding: 15px;
+    margin: 15px;
+    border: 2px black solid;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 3px 3px 10px black;
+}
 
+.img-central, .img-dtouno, .img-dtodos{
+    display: flex;
+    width: 100px;
+    height: 100px;
+    justify-content:left;
+}
 
 /*estilos footer*/
 
